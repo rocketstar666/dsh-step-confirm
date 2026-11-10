@@ -1,0 +1,29 @@
+{
+  "name": "dsh-step-confirm",
+  "version": "0.1.0",
+  "description": "「逐步确认」权限挡位：只有读工作区免费，写、越界读、执行命令、联网、切目录都逐次请求审批。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "permission",
+    "sandbox"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
